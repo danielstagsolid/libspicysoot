@@ -1,3 +1,3 @@
-module path_finder_5b664a
+module path_finder_71179a
 
 go 1.19
