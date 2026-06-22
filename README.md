@@ -1,4 +1,4 @@
-# path-finder-fa3e2b
+# path-finder-5b664a
 
 A Go path finder utility.
 
